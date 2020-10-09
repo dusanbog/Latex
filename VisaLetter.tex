@@ -1,0 +1,96 @@
+\documentclass[a4paper]{article}
+\usepackage[left=15mm, right=15mm, top=10mm, bottom=25mm]{geometry}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage{xcolor}
+\usepackage{lmodern}
+\usepackage{array}
+\usepackage{fontspec}
+\usepackage{enumitem}
+\usepackage{setspace}
+\usepackage[normalem]{ulem}
+
+\usepackage{idscoms}
+
+
+%\usepackage{showframe}
+
+\setmainfont{Brave Sans}
+\usepackage{changepage,titlesec}
+\titleformat{\section}{\fontsize {10}{10} \selectfont }{\textbf{\thesection.}}{4mm}{}
+\titlespacing*{\section} {0mm}{3mm}{3mm }
+\titleformat{\subsection}{\fontsize {10}{10} \selectfont }{\textbf{\thesubsection.}}{4mm}{}
+\titlespacing*{\subsection} {0mm}{3mm}{3mm }
+\titleformat{\subsubsection}{\fontsize {10}{10} \selectfont }{\textbf{\thesubsubsection.}}{4mm}{}
+\titlespacing*{\subsubsection} {0mm}{3mm}{3mm }
+
+\setlength\tabcolsep{0pt}
+\renewcommand{\arraystretch}{0}
+
+\begin{document}
+\begin{Form}
+\begin{flushleft}
+
+\begin{figure}
+    \includegraphics[height=25mm, width=25mm]{AbsaLogo.png}\\[12.5mm]
+\end{figure}
+
+\LineText{10}{\textbf {Confidential}}\\[4mm]
+
+\LineText{8}{Date} \FieldName{ApplicationDetails}{Date} \InputField{5mm}{7pt}{ApplicationDetails}{Date}\\[10mm]
+
+\LineText{8}{\textbf {THE ITALIAN HIGH COMMISSION}}\\[3mm]
+  
+\LineText{8}{To whom it may concern}\\[10mm]
+ 
+\LineText{8}{\textbf {RE: VISA APPLICATION}}\\[3mm]
+  
+\LineText{8}{This letter serves to advise that \FieldName{ApplicantDetails}{Title} \FieldName{ApplicantDetails}{Initials} \FieldName{ApplicantDetails}{LastName}}
+  \InputField{5mm}{7pt}{ApplicantDetails}{Title} 
+  \InputField{5mm}{7pt}{ApplicantDetails}{Initials} 
+  \InputField{5mm}{7pt}{ApplicantDetails}{LastName}\\[3mm]
+ 
+ \LineText{8}{has held an account \FieldName{ApplicantDetails}{AccountNumber}} \InputField{5mm}{7pt}{ApplicantDetails}{AccountNumber} \\[3mm]
+ 
+ \LineText{8}{in the books of \FieldName{ApplicantDetails}{BankName}} \InputField{5mm}{7pt}{ApplicantDetails}{BankName} \\[3mm]
+ 
+ \LineText{8}{since \FieldName{ApplicantDetails}{ClientOfTheBankSince}} \InputField{5mm}{7pt}{ApplicantDetails}{ClientOfTheBankSince} \\[3mm]
+  
+ \LineText{8}{The applicant’s s account is operated in accordance with the facilities granted to the applicant. The applicant has not requested the closure of the said account at the date of this letter.}\\[3mm]
+  
+ \LineText{8}{ACCOUNT HOLDERS NAME  \FieldName{ApplicantDetails}{Initials} \FieldName{ApplicantDetails}{LastName}}\\[3mm]
+   
+ \LineText{8}{ACCOUNT NUMBER \hspace{8mm}  \FieldName{ApplicantDetails}{AccountNumber}}\\[3mm]
+  
+  \LineText{8}{The account holder has informed us that their child will be travelling to Europe commencing from  \FieldName{CountryDetails}{VisitStartDate}  to return on the \FieldName{CountryDetails}{VisitEndDate}}
+  \InputField{5mm}{7pt}{CountryDetails}{VisitStartDate}
+  \InputField{5mm}{7pt}{CountryDetails}{VisitEndDate}\\[3mm]
+     
+  \LineText{8}{We confirm that as at the date of this letter the applicant has R \FieldName{ApplicationDetails}{FundsAvailable} available to support their child while travelling in accordance with the South African Reserve Bank Regulations.}  \InputField{5mm}{7pt}{ApplicationDetails}{FundsAvailable}\\[3mm]
+   
+ \LineText{8}{CHILD’S NAME   \hspace{6mm} \FieldName{DependantDetails}{FirstName} \FieldName{DependantDetails}{LastName}}
+ \InputField{5mm}{7pt}{DependantDetails}{FirstName}
+ \InputField{5mm}{7pt}{DependantDetails}{LastName}\\[3mm]
+   
+ \LineText{8}{CHILD’S ID NUMBER    \FieldName{DependantDetails}{IDNumber}} \InputField{5mm}{7pt}{DependantDetails}{IDNumber}\\[3mm]
+    
+ \LineText{8}{This letter is issued to facilitate the application for a Visa, and is concluded without any risk,  responsibility, obligation, undertaking or engagement on the part of Absa Bank Limited, its employees or agents.}\\[3mm]
+    
+ \LineText{8}{Trusting this meets your requirements.}\\[3mm]
+    
+ \LineText{8}{Trusting this meets your requirements.}\\[3mm]
+     
+ \LineText{8}{Yours faithfully}\\[12mm]
+  
+\begin{tabular}{m{69mm} m{19.6mm} m{86mm}}
+ & & \uline{\FieldName{BankEmployeeDetails}{FirstName} \FieldName{BankEmployeeDetails}{LastName}} \\
+ \hrulefill & &  \\[4.5mm]
+ {\fontsize{8}{8} \selectfont {Authorised Signature}} &  & {\fontsize{8}{8} \selectfont {Bankers Name and Surname}} 
+  \InputField{5mm}{7pt}{BankEmployeeDetails}{FirstName}  
+  \InputField{5mm}{7pt}{BankEmployeeDetails}{LastName}
+\end{tabular}
+
+\end{flushleft}
+\end{Form}
+\end{document}

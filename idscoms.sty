@@ -1,0 +1,21 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{idscoms}
+
+\usepackage{fontspec}
+\usepackage{eforms}
+
+\setmainfont{Brave Sans}
+
+%
+\newcommand* {\LineText}[2] {{\fontsize{#1}{#1} \selectfont{#2}}}
+
+%Field Naming
+\newcommand* {\FieldName}[3][8] {{\fontsize{#1}{#1} \selectfont{#2\##3}}}
+
+%Input Field
+\newcommand* {\InputField}[5][3mm] { \TextField[height=#1,width=#2,charsize=#3,name=#4\##5,bordercolor=]{}}
+
+%Read Only Field
+\newcommand* {\OutputField}[6][3mm] { \TextField[height=#1,width=#2, charsize=#3, name=#4\##5, value={#6}, bordercolor=, readonly=true, hidden=true]{}}
+
+
